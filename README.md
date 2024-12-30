@@ -6,8 +6,6 @@ StudyBuddy is a web application that allows you to create and join study rooms w
 
     - Python
     - Django
-    - HTML
-    - Jinja
 
 ---
 
