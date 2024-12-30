@@ -1,11 +1,12 @@
-# Developer's Build Notes
+# Welcome to StudyBuddy
 
-Welcome to StudyBuddy!
 StudyBuddy is a web application that allows you to create and join study rooms with your friends. You can chat, share files, and collaborate on projects in real-time. Get started by creating a new room or joining an existing one.
 
-## 2024/12/30
+## Developer's Build Notes
 
-### Setup
+### 2024/12/30
+
+#### Setup
 
 Create GitHub repository from GitHub Desktop `File->New Repository`
 `79b56954a71042910c6d3db931f81367d44e52cc`
@@ -20,6 +21,6 @@ Open application `python manage.py runserver`
 Check your browser `localhost:8000` and make sure you can see the app running
 Exit server `CTRL C`
 
-### Create base app
+#### Create base app
 
 Create base app `python manage.py startapp base`
