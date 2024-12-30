@@ -46,3 +46,5 @@ In `cmd prompt`:
 - Create base app `python manage.py startapp base`
 
 - `pip freeze > requirements.txt`
+
+#### Database
