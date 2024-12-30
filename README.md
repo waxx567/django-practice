@@ -44,3 +44,5 @@ In `cmd prompt`:
 #### Create base app
 
     - Create base app `python manage.py startapp base`
+
+`pip freeze > requirements.txt`
