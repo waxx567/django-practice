@@ -1,5 +1,8 @@
 # Developer's Build Notes
 
+Welcome to StudyBud!
+StudyBud is a web application that allows you to create and join study rooms with your friends. You can chat, share files, and collaborate on projects in real-time. Get started by creating a new room or joining an existing one.
+
 ## 2024/12/30
 
 ### Setup
