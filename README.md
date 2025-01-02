@@ -52,3 +52,5 @@ In `cmd prompt`:
 ### 🔋 2025/01/02
 
 Create admin user `python manage.py createsuperuser`
+
+Add rooms
