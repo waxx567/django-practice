@@ -10,3 +10,6 @@ class Room(models.Model):
     # participants = models.ManyToManyField(User, related_name='rooms')
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
