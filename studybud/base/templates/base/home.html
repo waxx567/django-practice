@@ -13,7 +13,14 @@
 
     <div> <!-- This is the left side of the home page -->
         <h3>Browse Topics</h3> 
-        <hr>   
+        <hr>  
+
+        {% for topic in topics %}
+            <div>
+                <a href="{% url 'home' %}?q={{topic.name}}">{{topic.name}}</a>
+            </div>
+            <hr>
+        {% endfor %}
     </div>
 
     <div> <!-- This is the right side of the home page -->
