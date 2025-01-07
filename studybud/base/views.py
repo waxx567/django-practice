@@ -12,6 +12,9 @@ from .forms import RoomForm
 
 def home(request):
     rooms = Room.objects.all()
+
+    topic = Topic.objects.all()
+
     context = {'rooms': rooms}
     return render(request, 'base/home.html', context)
 
