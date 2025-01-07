@@ -13,9 +13,9 @@ from .forms import RoomForm
 def home(request):
     rooms = Room.objects.all()
 
-    topic = Topic.objects.all()
+    topics = Topic.objects.all()
 
-    context = {'rooms': rooms, 'topic': topic}
+    context = {'rooms': rooms, 'topics': topics}
     return render(request, 'base/home.html', context)
 
 def room(request, pk):
