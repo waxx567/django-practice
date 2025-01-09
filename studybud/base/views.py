@@ -12,6 +12,11 @@ from .forms import RoomForm
 # ]
 
 def loginPage(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        print(username, password)
+
     context = {}
     return render(request, 'base/login_register.html', context)
 
