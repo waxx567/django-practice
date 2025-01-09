@@ -19,14 +19,7 @@ def loginPage(request):
         
         try:
             user = User.objects.get(username=username)
-            if user.check_password(password):
-                return redirect('home')
-            else:
-                context = {'error': 'Wrong password'}
-                return render(request, 'base/login_register.html', context)
         except:
-            context = {'error': 'User does not exist'}
-            return render(request, 'base/login_register.html', context)
 
     context = {}
     return render(request, 'base/login_register.html', context)
