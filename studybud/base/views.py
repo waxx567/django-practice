@@ -11,6 +11,9 @@ from .forms import RoomForm
 #     {'id': 3, 'name': 'Frontend developers'},
 # ]
 
+def loginPage(request):
+    return render(request, 'base/login.html')
+
 def home(request):
     q = request.GET.get('q') if request.GET.get('q') != None else ''
 
