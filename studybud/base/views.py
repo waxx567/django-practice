@@ -17,6 +17,7 @@ from .forms import RoomForm
 # ]
 
 def loginPage(request):
+    page = 'login'
 
     if request.user.is_authenticated:
         return redirect('home')
