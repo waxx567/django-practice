@@ -39,7 +39,7 @@ def loginPage(request):
         else:
             messages.error(request, 'Username OR password is incorrect')
 
-    context = {}
+    context = {'page': page}
     return render(request, 'base/login_register.html', context)
 
 
