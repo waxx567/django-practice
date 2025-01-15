@@ -35,9 +35,11 @@ def loginPage(request):
     context = {}
     return render(request, 'base/login_register.html', context)
 
+
 def logoutUser(request):
     logout(request)
     return redirect('home')
+
 
 def home(request):
     q = request.GET.get('q') if request.GET.get('q') != None else ''
@@ -54,10 +56,12 @@ def home(request):
     context = {'rooms': rooms, 'topics': topics, 'room_count': room_count}
     return render(request, 'base/home.html', context)
 
+
 def room(request, pk):
     room = Room.objects.get(id=pk)
     context = {'room': room,}
     return render(request, 'base/room.html', context)
+
 
 def createRoom(request):
     form = RoomForm()
@@ -71,6 +75,7 @@ def createRoom(request):
     context = {'form': form}
     return render(request, 'base/room_form.html', context)
 
+
 def updateRoom(request, pk):
     room = Room.objects.get(id=pk)
     form = RoomForm(instance=room)
@@ -83,6 +88,7 @@ def updateRoom(request, pk):
 
     context = {'form': form}
     return render(request, 'base/room_form.html', context)
+
 
 def deleteRoom(request, pk):
     room = Room.objects.get(id=pk)
