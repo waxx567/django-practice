@@ -64,6 +64,7 @@ def room(request, pk):
     return render(request, 'base/room.html', context)
 
 
+@login_required
 def createRoom(request):
     form = RoomForm()
 
