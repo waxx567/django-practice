@@ -50,6 +50,7 @@ def logoutUser(request):
 
 def registerPage(request):
     page = 'register'
+    form = UserCreationForm()
     
     return render(request, 'base/login_register.html')
 
