@@ -12,7 +12,7 @@
 
     {% for message in room_messages %}
     <div>
-        <small>@{{message.user}} created {{message.created_at}} </small>
+        <small>@{{message.user}} created {{message.created_at|timesince}} </small>
     </div>
     {% endfor %}
 </div>
