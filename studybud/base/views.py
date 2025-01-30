@@ -87,7 +87,9 @@ def room(request, pk):
     room_messages = room.message_set.all().order_by('-created_at')
 
     if request.method == 'POST':
-        message = Message.objects.create()
+        message = Message.objects.create(
+            
+        )
 
     context = {'room': room, 'room_messages': room_messages}
     return render(request, 'base/room.html', context)
