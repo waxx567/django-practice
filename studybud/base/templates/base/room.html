@@ -44,8 +44,14 @@
 
     <div>
         <h3>Participants</h3>
+        <hr>
+
+        {% for participant in participants %}
+        <div>
+            <p>@{{participant.username}}</p>
+        </div>
+        {% endfor %}
     </div>
-    <hr>
     
 </div>
 {% endblock content %}
