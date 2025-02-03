@@ -16,14 +16,9 @@
         </label>
     </form>
     <nav class="header__menu">
-        <!-- Not Logged In -->
-        <!-- <a href="/login.html">
-        <img src="./assets/avatar.svg" />
-        <p>Login</p>
-        </a> -->
 
         <!-- Logged In -->
-
+        {% if request.user.is_authenticated %}
         <div class="header__user">
         <a href="profile.html">
             <div class="avatar avatar--medium active">
@@ -38,6 +33,13 @@
             </svg>
         </button>
         </div>
+
+        <!-- Not Logged In -->
+        <!-- <a href="/login.html">
+        <img src="./assets/avatar.svg" />
+        <p>Login</p>
+        </a> -->
+        {% endif %}
 
         <div class="dropdown-menu">
         <a href="settings.html" class="dropdown-link"
