@@ -12,21 +12,10 @@
 <div class="home-container">
 
     <div> <!-- This is the left side of the home page -->
-        <h3>Browse Topics</h3> 
-        <hr>  
-
-        <div>
-            <a href="{% url 'home' %}">All</a>
-        </div>
-
-        {% for topic in topics %}
-        <div>
-            <a href="{% url 'home' %}?q={{topic.name}}">{{topic.name}}</a>
-        </div>
-        {% endfor %}
+        {% include "base/topics_component.html" %}
     </div>
 
-    <div> <!-- This is the right side of the home page -->
+    <div> <!-- This is the middle column of the home page -->
 
         <h5>{{rooms.count}} rooms available</h5>
 
@@ -49,7 +38,7 @@
 
     </div>
 
-    <div>
+    <div> <!-- This is the right side of the home page -->
         {% include "base/activity_component.html" %}
     </div>
     
