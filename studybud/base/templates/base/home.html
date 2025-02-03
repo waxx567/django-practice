@@ -16,6 +16,9 @@
     </div>
 
     <div> <!-- This is the middle column of the home page -->
+        <h5>{{rooms.count}} rooms available</h5>
+        <a href={% url 'create-room' %}>Create Room</a>
+        
         {% include "base/feed_component.html" %}
     </div>
 
