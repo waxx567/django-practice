@@ -13,8 +13,7 @@
           <div class="layout__body">
             <h2 class="auth__tagline">Find your study partner</h2>
 
-            <form class="form" action="" method="POST">
-              {% csrf_token %}
+            <form class="form" action="#">
               <div class="form__group form__group">
                 <label for="room_name">Username</label>
                 <input id="username" name="username" type="text" placeholder="e.g. dennis_ivy" />
@@ -52,7 +51,7 @@
 
             <div class="auth__action">
               <p>Haven't signed up yet?</p>
-              <a href="{% url 'register' %}" class="btn btn--link">Sign Up</a>
+              <a href="signup.html" class="btn btn--link">Sign Up</a>
             </div>
           </div>
         </div>
@@ -62,7 +61,7 @@
         <div class="layout__box">
           <div class="layout__boxHeader">
             <div class="layout__boxTitle">
-              <h3>Login</h3>
+              <h3>Register</h3>
             </div>
           </div>
           <div class="layout__body">
@@ -106,8 +105,8 @@
             </form>
 
             <div class="auth__action">
-              <p>Haven't signed up yet?</p>
-              <a href="{% url 'register' %}" class="btn btn--link">Sign Up</a>
+              <p>Already signed up?</p>
+              <a href="{% url 'login' %}" class="btn btn--link">Sign Up</a>
             </div>
           </div>
         </div>
