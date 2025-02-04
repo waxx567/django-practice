@@ -117,6 +117,7 @@ def createRoom(request):
     topics = Topic.objects.all()
     if request.method == 'POST':
         topic_name = request.POST.get('topic')
+        topic, created = Topic.objects.get_or_create(name=topic_name)
         form = RoomForm(request.POST)
         if form.is_valid():
             room = form.save(commit=False)
