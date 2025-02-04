@@ -143,7 +143,7 @@ def updateRoom(request, pk):
     if request.method == 'POST':
         topic_name = request.POST.get('topic')
         topic, created = Topic.objects.get_or_create(name=topic_name)
-        
+        room.name = request.POST.get('name')    
         return redirect('home')
 
     context = {'form': form, 'topics': topics, 'room': room}
