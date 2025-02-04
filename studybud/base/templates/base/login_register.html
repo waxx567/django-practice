@@ -72,7 +72,7 @@
 
               {% for field in form %}
               <div class="form__group form__group">
-                <label for="room_name">Username</label>
+                <label for="room_name">{{field.label}}</label>
                 <input id="username" name="username" type="text" placeholder="e.g. dennis_ivy" />
               </div>
               {% endfor %}
