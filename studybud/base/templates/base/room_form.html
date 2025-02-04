@@ -20,11 +20,13 @@
         <div class="layout__body">
           <form class="form" action="" method="POST">
             {% csrf_token %}
+            {% for field in form %}
             <div class="form__group">
               <label for="room_name">Room Name</label>
               <input id="room_name" name="room_name" type="text" placeholder="E.g. Mastering Python + Django" />
             </div>
-            
+            {% endfor %}
+
             {% comment %} 
             <div class="form__group">
               <label for="room_topic">Topic</label>
