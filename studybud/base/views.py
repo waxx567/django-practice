@@ -141,6 +141,8 @@ def updateRoom(request, pk):
         return HttpResponse('You are not allowed here!')
 
     if request.method == 'POST':
+        topic_name = request.POST.get('topic')
+        topic, created = Topic.objects.get_or_create(name=topic_name)
         form = RoomForm(request.POST, instance=room)
         if form.is_valid():
             form.save()
