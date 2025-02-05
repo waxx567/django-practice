@@ -199,3 +199,8 @@ def topicsPage(request):
     q = request.GET.get('q') if request.GET.get('q') != None else ''
     topics = Topic.objects.filter(name__icontains=q)
     return render(request, 'base/topics.html', {'topics': topics})
+
+
+def activityPage(request):
+    messages = Message.objects.all().order_by('-created_at')
+    return render(request, 'base/activities.html', {'messages': messages})
