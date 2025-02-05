@@ -35,9 +35,11 @@
           <li>
             <a href="{% url 'topics' %}" class="active">All <span>{{topics.count}}</span></a>
           </li>
+          {% for topic in topics %}
           <li>
             <a href="/">Python <span>232</span></a>
-          </li>
+          </li>          
+          {% endfor %}
         </ul>
       </div>
     </div>
