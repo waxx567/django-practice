@@ -203,4 +203,4 @@ def topicsPage(request):
 
 def activityPage(request):
     room_messages = Message.objects.all()#.order_by('-created_at')
-    return render(request, 'base/activities.html', {})
+    return render(request, 'base/activity.html', {})
