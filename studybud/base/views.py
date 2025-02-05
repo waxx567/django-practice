@@ -202,5 +202,5 @@ def topicsPage(request):
 
 
 def activityPage(request):
-    messages = Message.objects.all().order_by('-created_at')
-    return render(request, 'base/activities.html', {'messages': messages})
+    # messages = Message.objects.all().order_by('-created_at')
+    return render(request, 'base/activities.html', {})
