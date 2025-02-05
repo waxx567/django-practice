@@ -195,7 +195,6 @@ def updateUser(request):
     return render(request, 'base/update-user.html', {'form': form})
 
 
-@login_required(login_url='login')
 def topicsPage(request):
     q = request.GET.get('q') if request.GET.get('q') != None else ''
     topics = Topic.objects.filter(name__icontains=q)
