@@ -37,7 +37,7 @@
           </li>
           {% for topic in topics %}
           <li>
-            <a href="/">{{topic.name}}<span>232</span></a>
+            <a href="/">{{topic.name}}<span>{{topic.room_set.all.count}}</span></a>
           </li>          
           {% endfor %}
         </ul>
