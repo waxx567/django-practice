@@ -13,6 +13,7 @@ def getRoutes(request):
     return Response(routes)
 
 
+@api_view(['GET'])
 def getRooms(request):
     rooms = Room.objects.all()
     return Response(rooms)
