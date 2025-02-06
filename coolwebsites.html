@@ -19,7 +19,8 @@
 <script>
     let getRooms = async () => {
         let response = await fetch('http://127.0.0.1:8000/api/rooms/')
-        console.log('response', response)
+        let rooms = await response.json()
+        console.log('rooms:', rooms)
     }
 
     getRooms()
