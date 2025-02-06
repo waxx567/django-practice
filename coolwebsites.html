@@ -22,7 +22,10 @@
     let getRooms = async () => {
         let response = await fetch('http://127.0.0.1:8000/api/rooms/')
         let rooms = await response.json()
-        console.log('rooms:', rooms)
+        
+        for (let i = 0; i < rooms.length; i++) {
+            let room = rooms[i]
+        }
     }
 
     getRooms()
