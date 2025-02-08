@@ -1,6 +1,6 @@
 # Customer Relationship Management
 
-## Installation
+## 🛠️ Installation
 
 **Create virtual environment:** `conda create --name vEnv python=3.12`
 **Install Django:** `pip install django`
