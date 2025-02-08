@@ -11,4 +11,6 @@
 - **Run Server:**  `py manage.py runserver`
 - **Check Application is Working:** Go to [localhost:8000](http://127.0.0.1:8000).
 - **Create Application:** `django-admin startapp webapp`
-- **Continues from:** `f107ed50e679f0091b16ebfe9659f514c3c6aa97` on my [GitHub](https://github.com/waxx567/django-practice/tree/main/crm).
+- **Update `settings.py`:** `f107ed50e679f0091b16ebfe9659f514c3c6aa97` on my [GitHub](https://github.com/waxx567/django-practice/tree/main/crm).
+- **Migrate Django Default Apps:** `py manage.py migrate`
+- **Create Superuser:** `py manage.py createsuperuser`
