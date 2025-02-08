@@ -8,3 +8,5 @@
 **Create project:** `django-admin startproject crm`
 **Change Directory:** `cd crm`
 **Create Application:** `django-admin startapp webapp`
+**Run Server:**  `py manage.py runserver`
+**Check Application is Working:** Go to [localhost:8000](http://127.0.0.1:8000)
