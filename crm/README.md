@@ -1,5 +1,7 @@
 # Customer Relationship Management
 
+`Python` `Django` `Bootstrap`
+
 ## 🛠️ Installation 2025/02/08
 
 - **In Anaconda Prompt:** Create root folder and/or navigate into it.
