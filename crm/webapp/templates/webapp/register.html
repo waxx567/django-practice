@@ -2,13 +2,21 @@
 
 {% block content %}
 
-    <div class="container">
-        <h2>Register</h2>
-        <form method="POST">
+    <div class="container bg-light shadow-md p-5">
+
+        <h3>Register</h3>
+
+        <h5>Start managing your customers today!</h5>
+
+        <hr>
+        <br>
+
+        <form method="POST" autocomplete="off">
+
             {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="btn btn-primary">Register</button>
-        </form>
+
+            <div class="form-group
+    
     </div>
 
 {% endblock content %}
