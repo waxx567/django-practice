@@ -12,12 +12,6 @@ class CreateUserForm(UserCreationForm):
 
 
 class LoginForm(AuthenticationForm):
-
-    class Meta:
-        model = User
-        fields = ["username", "password"]
-
-    def __init__(self, *args, **kwargs):
-        super(LoginForm, self).__init__(*args, **kwargs)
-        self.fields['username'].widget = TextInput(attrs={'class': 'form-control', 'placeholder': 'Username'})
-        self.fields['password'].widget = PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Password'})
+    
+    username = forms.CharField(widget=TextInput(attrs={'class': 'form-control', 'placeholder': 'Username'}))
+    password = forms.CharField(widget=PasswordInput(attrs={'class': 'form-control', 'placeholder':'Password'}))
