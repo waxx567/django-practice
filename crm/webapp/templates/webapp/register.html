@@ -15,7 +15,9 @@
 
             {% csrf_token %}
 
-            {{form}}
+            {{form.as_p}} 
+            
+            <br>
     
     </div>
 
