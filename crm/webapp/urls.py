@@ -19,4 +19,6 @@ urlpatterns = [
 
     path('update-record/<str:pk>/', views.update_record, name='update-record'),
 
+    path('view-record/<str:pk>/', views.view_record, name='view-record'),
+
 ]
