@@ -73,9 +73,9 @@ def create_record(request):
 
         if form.is_valid():
             form.save()
-            
+
             return redirect('dashboard')
 
     context = {'form': form}
 
-    return render(request, 'webapp/dashboard.html', context)
+    return render(request, 'webapp/create-record.html', context)
