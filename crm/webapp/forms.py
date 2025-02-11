@@ -20,7 +20,7 @@ class LoginForm(AuthenticationForm):
     password = forms.CharField(widget=PasswordInput(attrs={'class': 'form-control', 'placeholder':'Password'}))
 
 
-class AddRecordForm(forms.ModelForm):
+class CreateRecordForm(forms.ModelForm):
     class Meta:
         model = Record
         fields = ['first_name', 'last_name', 'email', 'phone', 'address', 'city', 'state', 'country', 'zipcode']
