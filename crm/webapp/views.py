@@ -58,7 +58,7 @@ def user_logout(request):
 
 @login_required(login_url='my-login')
 def dashboard(request):
-    my_records = Record.objects.all()
-    context = {'my_records': my_records}
+    records = Record.objects.all()
+    context = {'records': records}
 
     return render(request, 'webapp/dashboard.html', context)
