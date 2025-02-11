@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from .forms import CreateUserForm, LoginForm
 
+from django.contrib.auth.models import auth
+
 
 def home(request):
     # return HttpResponse('Hello, World!')
