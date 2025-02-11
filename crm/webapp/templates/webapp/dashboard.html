@@ -7,7 +7,7 @@
     <h5>{{user}}'s Dashboard</h5>
     <hr>
 
-    <a class="btn btn-primary btn=sm" href="{% url 'dashboard' %}">Create New</a>
+    <a class="btn btn-primary btn=sm btn-index" href="{% url 'dashboard' %}">Create New</a>
 
     {% for record in records %}
         {{record.id}}
