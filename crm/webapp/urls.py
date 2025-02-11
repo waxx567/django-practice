@@ -17,4 +17,6 @@ urlpatterns = [
 
     path('create-record/', views.create_record, name='create-record'),
 
+    path('update-record/<str:pk>/', views.update_record, name='update-record'),
+
 ]
