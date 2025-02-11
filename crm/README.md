@@ -2,7 +2,7 @@
 
 ## 🛠️ Tech Stack
 
-`HTML` `Python` `Django` `Bootstrap` `Crispy Forms` `CSS` `JavaScript`
+`HTML` `CSS` `Python` `Django` `Bootstrap` `Crispy Forms`
 
 ## ⚙️ Installation 2025/02/08
 
