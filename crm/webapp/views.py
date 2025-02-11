@@ -4,6 +4,8 @@ from .forms import CreateUserForm, LoginForm
 from django.contrib.auth.models import auth
 from django.contrib.auth import authenticate, login, logout
 
+from django.contrib.auth.decorators import login_required
+
 
 def home(request):
     # return HttpResponse('Hello, World!')
@@ -51,5 +53,6 @@ def user_logout(request):
     return redirect('my-login')
 
 
+@login_required(login_url='my-login')
 def dashboard(request):
     return render(request, 'webapp/dashboard.html')
