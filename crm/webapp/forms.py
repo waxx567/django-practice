@@ -23,4 +23,4 @@ class LoginForm(AuthenticationForm):
 class RecordForm(forms.ModelForm):
     class Meta:
         model = Record
-        fields = ['title', 'description', 'file']
+        fields = ['first_name', 'last_name', 'email', 'phone', 'address', 'city', 'state', 'country', 'zipcode']
