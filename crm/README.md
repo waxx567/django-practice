@@ -1,6 +1,6 @@
 # Customer Relationship Management
 
-`Python` `Django` `Bootstrap`
+`Python` `Django` `Bootstrap` `Crispy Forms`
 
 ## 🛠️ Installation 2025/02/08
 
