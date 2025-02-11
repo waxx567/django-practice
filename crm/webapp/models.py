@@ -14,3 +14,6 @@ class Record(models.Model):
     state = models.CharField(max_length=100)
     country = models.CharField(max_length=100)
     zipcode = models.CharField(max_length=10)
+
+    def __str__(self):
+        return f"{self.first_name} + ' ' + {self.last_name}"
