@@ -32,6 +32,14 @@
             {% for record in records %}
             <tr>
                 <td>{{record.id}}</td>
+                <td>{{record.full_name}}</td>
+                <td>{{record.email}}</td>
+                <td>{{record.phone}}</td>
+                <td>{{record.address}}</td>
+                <td>{{record.city}}</td>
+                <td>{{record.state}}</td>
+                <td>{{record.country}}</td>
+                <td>{{record.zipcode}}</td>                
             </tr>            
             {% endfor %}
         {% endif %}
