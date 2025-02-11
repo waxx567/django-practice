@@ -3,6 +3,7 @@
 {% block content %}
     <div class="card">
         <strong>
+            &nbsp;
             {{ record.last_name|upper }} {{ record.first_name }} 
         </strong>
         <hr>
@@ -22,6 +23,7 @@
     </div>
 
     <br>
+    &nbsp;
     <a class="btn btn-success btn-sm" href="{% url 'dashboard' %}">Go Back</a>
     &nbsp;
     <a class="btn btn-dark btn-sm" href="{% url 'update-record' record.id %}">Edit Record</a>
