@@ -6,6 +6,8 @@ from django.contrib.auth import authenticate
 
 from django.contrib.auth.decorators import login_required
 
+from .models import Record
+
 
 def home(request):
     # return HttpResponse('Hello, World!')
