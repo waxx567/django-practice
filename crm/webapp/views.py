@@ -17,8 +17,26 @@ def register(request):
         form = CreateUserForm(request.POST)
         if form.is_valid():
             form.save()
-            # return redirect('login')
+            return redirect('my_login')
 
     context = {'form': form}
 
     return render(request, 'webapp/register.html', context)
+
+
+def my_login(request):
+    form = LoginForm()
+
+    if request.method == 'POST':
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect('home')
+
+    context = {'form': form}
+
+    return render(request, 'webapp/login.html', context)
