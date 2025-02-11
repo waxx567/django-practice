@@ -62,3 +62,8 @@ def dashboard(request):
     context = {'records': records}
 
     return render(request, 'webapp/dashboard.html', context)
+
+
+@login_required(login_url='my-login')
+def create_record(request):
+    return render(request, 'webapp/dashboard.html')
