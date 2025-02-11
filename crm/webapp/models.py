@@ -9,7 +9,7 @@ class Record(models.Model):
     last_name = models.CharField(max_length=100)
     email = models.EmailField(max_length=255)
     phone = models.CharField(max_length=20)
-    address = models.CharField(max_length=255)
+    address = models.CharField(max_length=300)
     city = models.CharField(max_length=100)
     state = models.CharField(max_length=100)
     country = models.CharField(max_length=100)
