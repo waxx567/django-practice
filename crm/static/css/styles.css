@@ -2,6 +2,11 @@ body {
     background-color: rgb(221, 220, 224);
 }
 
+.btn {
+    width: 100%;
+    border-radius: 5px;
+}
+
 .form-layout {
     border-radius: 15px;
     width: 500px;
