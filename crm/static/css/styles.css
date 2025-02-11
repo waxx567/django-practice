@@ -7,6 +7,11 @@ body {
     border-radius: 5px;
 }
 
+.btn-index {
+    width: 180px;
+    border-radius: 5px;
+}
+
 .form-layout {
     border-radius: 15px;
     width: 550px;
