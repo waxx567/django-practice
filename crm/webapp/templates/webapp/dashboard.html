@@ -29,9 +29,11 @@
 
         <tbody>
         {% if records %}
+            {% for record in records %}
             <tr>
                 <td></td>
-            </tr>
+            </tr>            
+            {% endfor %}
         {% endif %}
         </tbody>
     </table>
