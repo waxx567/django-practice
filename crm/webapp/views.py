@@ -17,7 +17,7 @@ def register(request):
         form = CreateUserForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('my_login')
+            # return redirect('')
 
     context = {'form': form}
 
