@@ -16,3 +16,7 @@ body {
     border-radius: 15px;
     width: 550px;
 }
+
+.card {
+    background-color: lightblue;
+}
