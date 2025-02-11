@@ -10,6 +10,14 @@
     <a class="btn btn-outline-primary btn-sm btn-index" href="{% url 'dashboard' %}">Create New</a>
     <hr>
 
+    <table class="table table-light table-hover">
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </table>
+
     {% for record in records %}
         {{record.id}}
         {{record.first_name}}
