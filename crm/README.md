@@ -1,8 +1,10 @@
 # Customer Relationship Management
 
-`Python` `Django` `Bootstrap` `Crispy Forms`
+## 🛠️ Tech Stack
 
-## 🛠️ Installation 2025/02/08
+`HTML` `Python` `Django` `Bootstrap` `Crispy Forms` `CSS` `JavaScript`
+
+## ⚙️ Installation 2025/02/08
 
 - **In Anaconda Prompt:** Create root folder and/or navigate into it.
 - **Create Virtual Environment:** `conda create --name vEnv python=3.12`
