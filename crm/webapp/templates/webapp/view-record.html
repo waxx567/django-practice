@@ -3,7 +3,7 @@
 {% block content %}
     <div class="card">
         <strong>
-            {{ record.first_name }} {{ record.last_name }}
+            {{ record.last_name|upper }} {{ record.first_name }} 
         </strong>
         <div class="card-body">
             <p><strong>ID: </strong>{{ record.id }}</p> 
@@ -15,7 +15,7 @@
             <p><strong>State: </strong>{{ record.state }}</p> 
             <p><strong>Zip: </strong>{{ record.zipcode }}</p> 
             <p><strong>Country: </strong>{{ record.country }}</p>
-            
+
             <p><strong>Created: </strong>{{ record.creation_date }}</p>
         </div>
     </div>
