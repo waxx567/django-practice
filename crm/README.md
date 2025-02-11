@@ -22,5 +22,5 @@
 - **Run Server:**  `py manage.py runserver`
 - **Open Application:** Go to [localhost:8000](http://127.0.0.1:8000).
 
-- **Crispy Forms:** `pip install django-crispy-forms==1.14.0`
+- **Crispy Forms:** `pip install django-crispy-forms==1.14.0` *use this version ONLY*
 - **Confirm Packages in the Virtual Environment:** `pip list`
