@@ -79,3 +79,21 @@ def create_record(request):
     context = {'form': form}
 
     return render(request, 'webapp/create-record.html', context)
+
+
+@login_required(login_url='my-login')
+def update_record(request, pk):
+    record = Record.objects.get(id=pk)
+    form = UpdateRecordForm(instance=record)
+
+    if request.method == 'POST':
+        form = UpdateRecordForm(request.POST, instance=record)
+
+        if form.is_valid():
+            form.save()
+
+            return redirect('dashboard')
+
+    context = {'form': form}
+
+    return render(request, 'webapp/update-record.html', context)
