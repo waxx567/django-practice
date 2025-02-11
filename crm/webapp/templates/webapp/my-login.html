@@ -1,5 +1,7 @@
 {% extends "webapp/base.html" %}
 
+{% block title %}Login{% endblock title %}
+
 {% load crispy_forms_tags %}
 
 {% block content %}
@@ -8,9 +10,7 @@
 
         <div class="container bg-light shadow-md p-5 form-layout">
 
-            <h3>Register</h3>
-
-            <h5>Start managing your customers today!</h5>
+            <h3>Login to Your Account</h3>
 
             <hr>
             <br>
@@ -21,12 +21,12 @@
                 {{form|crispy}} 
                 <br>
 
-                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="submit" class="btn btn-primary">Login</button>
             </form>
             <br>
 
             <div class="text-center">
-                <p>Already have an account? <a href="{% url '' %}">Login</a></p>
+                <p>Don't have an account? <a href="{% url 'register' %}">Sign Up</a></p>
             </div>
         
         </div>
