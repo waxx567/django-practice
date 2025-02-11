@@ -66,4 +66,5 @@ def dashboard(request):
 
 @login_required(login_url='my-login')
 def create_record(request):
-    return render(request, 'webapp/dashboard.html')
+    
+    pass
