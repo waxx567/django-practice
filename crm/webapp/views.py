@@ -70,8 +70,10 @@ def create_record(request):
 
     if request.method == 'POST':
         form = CreateRecordForm(request.POST)
+
         if form.is_valid():
             form.save()
+            
             return redirect('dashboard')
 
     context = {'form': form}
