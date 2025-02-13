@@ -24,3 +24,5 @@
 
 - **Crispy Forms:** `pip install django-crispy-forms==1.14.0` *use this version ONLY*
 - **Confirm Packages in the Virtual Environment:** `pip list`
+
+`pip freeze > requirements.txt`
