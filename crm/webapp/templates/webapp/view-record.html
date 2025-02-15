@@ -10,7 +10,7 @@
             {{ record.last_name|upper }} {{ record.first_name }} 
         </strong>
         <hr>
-
+        
         <div class="card-body">
             <p><strong>ID: </strong>{{ record.id }}</p> 
             <p><strong>Email: </strong>{{ record.email }}</p> 
@@ -24,13 +24,13 @@
 
             <p><strong>Created: </strong>{{ record.creation_date }}</p>
         </div>
-
-        <br>
-        &nbsp;
-        <a class="btn btn-success btn-sm btn-index" href="{% url 'dashboard' %}">Go Back</a>
-        &nbsp;
-        <a class="btn btn-dark btn-sm btn-index" href="{% url 'update-record' record.id %}">Edit Record</a>
-        &nbsp;
-        <a class="btn btn-danger btn-sm btn-index" href="{% url '' %}">Delete Record</a>
     </div>
+
+    <br>
+    &nbsp;
+    <a class="btn btn-success btn-sm" href="{% url 'dashboard' %}">Go Back</a>
+    &nbsp;
+    <a class="btn btn-dark btn-sm" href="{% url 'update-record' record.id %}">Edit Record</a>
+    &nbsp;
+    <a class="btn btn-danger btn-sm" href="{% url '' %}">Delete Record</a>
 {% endblock content %}
