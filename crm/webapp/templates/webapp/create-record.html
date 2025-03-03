@@ -19,10 +19,43 @@
             <form method="POST" autocomplete="off">
                 {% csrf_token %}
 
-                {{form|crispy}} 
+                {{form.first_name|as_crispy_field}} 
+
+                <br>
+                
+                {{form.last_name|as_crispy_field}}
+
                 <br>
 
-                <button type="submit" class="btn btn50 btn-outline-primary"><strong>Create New Record</strong> &nbsp; <i class="fa fa-check"></i></button>
+                {{form.email|as_crispy_field}}
+
+                <br>
+
+                {{form.phone|as_crispy_field}}
+
+                <br>
+
+                {{form.address|as_crispy_field}}
+
+                <br>
+
+                {{form.city|as_crispy_field}}
+
+                <br>
+
+                {{form.state|as_crispy_field}}
+
+                <br>
+
+                {{form.zipcode|as_crispy_field}}
+
+                <br>
+
+                {{form.country|as_crispy_field}}
+
+                <br>
+
+                <button type="submit" class="btn btn50 btn-primary"><strong>Create New Record</strong> &nbsp; <i class="fa fa-check"></i></button>
 
                 <a href="{% url 'dashboard' %}" class="btn btn50 btn-outline-secondary btn-index"><strong>Go Back</strong> &nbsp; <i class="fa fa-arrow-left"></i></a>
             </form>
