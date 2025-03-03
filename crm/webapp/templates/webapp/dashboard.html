@@ -46,7 +46,7 @@
 
                 <td>{{record.creation_date}}</td>      
 
-                <td><a class="btn btn-success-outline btn-sm" href="{% url 'view-record' record.id %}"><i class="fa fa-eye"></i></a></td>       
+                <td><a class="btn btn-sm" href="{% url 'view-record' record.id %}"><i class="fa fa-eye"></i></a></td>       
             </tr>            
             {% endfor %}
         {% endif %}
