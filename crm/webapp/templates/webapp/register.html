@@ -21,7 +21,15 @@
                 {% csrf_token %}
 
                 {{form.username|as_crispy_field}}
-                
+
+                <br>
+
+                {{form.password1|as_crispy_field}}
+
+                <br>
+
+                {{form.password2|as_crispy_field}}
+
                 <br>
 
                 <button type="submit" class="btn btn100 btn-warning"><strong>Register</strong> &nbsp; <i class="fa fa-user"></i></button>
