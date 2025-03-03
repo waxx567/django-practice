@@ -6,6 +6,7 @@ A user-friendly CRM project for comprehensive customer data control featuring fu
 
 - `Django`
 - `HTML`
+- `JavaScript`
 - `CSS`
 - `Python`
 - `Bootstrap`
