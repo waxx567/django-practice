@@ -108,3 +108,18 @@ def view_record(request, pk):
     context = {'record': record}
 
     return render(request, 'webapp/view-record.html', context)
+
+
+# Delete a record
+@login_required(login_url='my-login')
+def delete_record(request, pk):
+    record = Record.objects.get(id=pk)
+
+    if request.method == 'POST':
+        record.delete()
+
+        return redirect('dashboard')
+
+    context = {'record': record}
+
+    return render(request, 'webapp/delete-record.html', context)
