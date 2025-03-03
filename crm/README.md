@@ -39,7 +39,7 @@ Confirm installed packages:
 pip list
 ```
 
-### 3. Create Django Project & App
+### 3. Create Django Project & Application
 
 1. Start a new Django project:
    ```sh
