@@ -26,3 +26,7 @@
 - **Confirm Packages in the Virtual Environment:** `pip list`
 
 `pip freeze > requirements.txt`
+
+### Developer Login
+
+- **User:** del5480
