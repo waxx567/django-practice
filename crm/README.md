@@ -108,9 +108,9 @@ pip freeze > requirements.txt
    ```
 2. Open [localhost:8000](http://127.0.0.1:8000) in your browser.
 
-### 🔑 User Authentication
+## 🔑 User Login
 
-Create your own account and explore the app to your heart's desire!
+Create your own account, remember your login details and explore the app to your heart's content!
 
 ---
 For any issues or further assistance, feel free to [email me](feedback@fivefiftyfive.io).
