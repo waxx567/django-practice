@@ -112,4 +112,4 @@ pip freeze > requirements.txt
 Create your own account and explore the app to your heart's content!
 
 ---
-For any issues or further assistance, feel free to [email me](feedback@fivefiftyfive.io).
+If you have any feedback, suggestions, or advice, [email me](feedback@fivefiftyfive.io). Let's chat!
