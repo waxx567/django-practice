@@ -2,7 +2,7 @@
 
 ## 🛠️ Tech Stack
 
-`HTML` `CSS` `Python` `Django` `Bootstrap` `Crispy Forms`
+`HTML` `CSS` `Python` `Django` `Bootstrap` `Crispy Forms` `Font Awesome`
 
 ## ⚙️ Installation 2025/02/08
 
@@ -30,3 +30,4 @@
 ### My Login
 
 - **User:** del5480 *Email and password needed*
+- **Otherwise** Create an account and explore!
