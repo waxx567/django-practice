@@ -27,6 +27,6 @@
 
 `pip freeze > requirements.txt`
 
-### Developer Login
+### My Login
 
 - **User:** del5480 *Email and password needed*
