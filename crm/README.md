@@ -12,7 +12,7 @@ A user-friendly CRM project for comprehensive customer data control featuring fu
 - `Crispy Forms`
 - `Font Awesome`
 
-## ⚙️ Installation Guide (2025/02/08)
+## ⚙️ Installation Guide
 
 Follow these steps to install and set up the CRM app:
 
