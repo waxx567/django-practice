@@ -16,3 +16,8 @@ body {
     border-radius: 15px;
     width: 550px;
 }
+
+.btn-sm {
+    width: 100px;
+    border-radius: 5px;
+}
