@@ -1,6 +1,6 @@
 # Customer Relationship Management (CRM) App
 
-A complete Customer Relationship Management (CRM) project with event management handled using Django's messages framework.
+A complete Customer Relationship Management (CRM) project with event management and notifications.
 
 ## 🛠️ Tech Stack
 
@@ -11,7 +11,6 @@ A complete Customer Relationship Management (CRM) project with event management 
 - `Bootstrap`
 - `Crispy Forms`
 - `Font Awesome`
-- `Django Messages`
 
 ## ⚙️ Installation Guide (2025/02/08)
 
