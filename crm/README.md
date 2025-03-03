@@ -29,4 +29,4 @@
 
 ### Developer Login
 
-- **User:** del5480
+- **User:** del5480 *Email and password needed*
