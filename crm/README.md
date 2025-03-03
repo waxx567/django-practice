@@ -110,7 +110,7 @@ pip freeze > requirements.txt
 
 ## 🔑 User Login
 
-Create your own account, remember your login details and explore the app to your heart's content!
+Create your own account and explore the app to your heart's content!
 
 ---
 For any issues or further assistance, feel free to [email me](feedback@fivefiftyfive.io).
