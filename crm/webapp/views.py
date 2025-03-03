@@ -99,6 +99,7 @@ def update_record(request, pk):
     return render(request, 'webapp/update-record.html', context)
 
 
+# View a single record
 @login_required(login_url='my-login')
 def view_record(request, pk):
     record = Record.objects.get(id=pk)
