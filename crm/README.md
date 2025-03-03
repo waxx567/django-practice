@@ -1,13 +1,13 @@
-# Customer Relationship Management (CRM) App
+# Customer Relationship Management (CRM) Application
 
-A complete Customer Relationship Management (CRM) project with event management and notifications.
+A complete CRM project with event management and notifications.
 
 ## 🛠️ Tech Stack
 
+- `Django`
 - `HTML`
 - `CSS`
 - `Python`
-- `Django`
 - `Bootstrap`
 - `Crispy Forms`
 - `Font Awesome`
