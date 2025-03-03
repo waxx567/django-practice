@@ -17,7 +17,39 @@
             <form method="POST" autocomplete="off">
                 {% csrf_token %}
 
-                {{form|crispy}} 
+                {{form.first_name|as_crispy_field}}
+                <br>
+
+                {{form.last_name|as_crispy_field}}
+
+                <br>
+
+                {{form.email|as_crispy_field}}
+
+                <br>
+
+                {{form.phone|as_crispy_field}}
+
+                <br>
+
+                {{form.address|as_crispy_field}}
+
+                <br>
+
+                {{form.city|as_crispy_field}}
+
+                <br>
+
+                {{form.state|as_crispy_field}}
+
+                <br>
+
+                {{form.zipcode|as_crispy_field}}
+
+                <br>
+
+                {{form.country|as_crispy_field}} 
+
                 <br>
 
                 <button type="submit" class="btn btn-info btn-index"><strong>Update Record &nbsp; <i class="fa fa-plus"></i></strong></button>
