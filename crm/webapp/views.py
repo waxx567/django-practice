@@ -110,7 +110,6 @@ def view_record(request, pk):
     return render(request, 'webapp/view-record.html', context)
 
 
-# Delete a record
 @login_required(login_url='my-login')
 def delete_record(request, pk):
 
