@@ -2,10 +2,6 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.btn {
-    border-radius: 15px;
-}
-
 .btn100 {
     width: 100%;
     border-radius: 5px;
