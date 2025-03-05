@@ -8,6 +8,8 @@ from django.contrib.auth.decorators import login_required
 
 from .models import Record
 
+from django.contrib import messages
+
 
 def home(request):
     # return HttpResponse('Hello, World!')
