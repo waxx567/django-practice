@@ -1,4 +1,4 @@
-// Initiate the message timeout
+// Initiate the message/notification timeout
 
 var message_timeout = document.getElementById('message-timer');
 
