@@ -47,7 +47,7 @@ def my_login(request):
 
             if user is not None:
                 auth.login(request, user)
-                messages.success(request, 'You are logged in!')
+                # messages.success(request, 'You are logged in!')
                 
                 return redirect('dashboard')
 
