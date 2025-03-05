@@ -1,6 +1,6 @@
 # Customer Relationship Management (CRM) Application
 
-A user-friendly CRM project for comprehensive customer data control featuring full create, read, update, and delete (CRUD) capablities, event management and flash message notifications through an easy-to-operate UI.
+A user-friendly CRM project for comprehensive customer data control featuring full create, read, update, and delete (CRUD) capablities, simple event management and flash message notifications through an easy-to-operate UI.
 
 ## 🛠️ Tech Stack
 
