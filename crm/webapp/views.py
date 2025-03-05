@@ -56,12 +56,6 @@ def my_login(request):
     return render(request, 'webapp/my-login.html', context)
 
 
-def user_logout(request):
-    auth.logout(request)
-
-    return redirect('my-login')
-
-
 @login_required(login_url='my-login')
 def dashboard(request):
     records = Record.objects.all()
@@ -79,6 +73,7 @@ def create_record(request):
 
         if form.is_valid():
             form.save()
+            messages.success(request, 'Record created successfully!')
 
             return redirect('dashboard')
 
@@ -97,6 +92,7 @@ def update_record(request, pk):
 
         if form.is_valid():
             form.save()
+            messages.success(request, 'Record updated successfully!')
 
             return redirect('dashboard')
 
@@ -120,5 +116,13 @@ def delete_record(request, pk):
 
     record = Record.objects.get(id=pk)
     record.delete()
+    messages.success(request, 'Record deleted successfully!')
 
     return redirect('dashboard')
+
+
+def user_logout(request):
+    auth.logout(request)
+    messages.success(request, 'User logged out!')
+
+    return redirect('my-login')
