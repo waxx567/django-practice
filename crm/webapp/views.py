@@ -110,7 +110,6 @@ def update_record(request, pk):
 def view_record(request, pk):
 
     record = Record.objects.get(id=pk)
-    
     context = {'record': record}
 
     return render(request, 'webapp/view-record.html', context)
@@ -120,7 +119,6 @@ def view_record(request, pk):
 def delete_record(request, pk):
 
     record = Record.objects.get(id=pk)
-
     record.delete()
 
     return redirect('dashboard')
