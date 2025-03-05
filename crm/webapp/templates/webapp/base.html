@@ -19,6 +19,13 @@
         <br>
 
         <!-- Display Messages -->
+        {% for message in messages %}
+            {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+                    <p class="alert alert-success float-center text-center">
+                        <i class="fa fa-check"></i> &nbsp; {{ message }}
+                    </p>
+        {% endfor %}
+
         {% block content %}
         
         {% endblock content %}
