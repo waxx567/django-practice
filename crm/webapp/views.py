@@ -21,8 +21,11 @@ def register(request):
 
     if request.method == 'POST':
         form = CreateUserForm(request.POST)
+
         if form.is_valid():
             form.save()
+            messages.success(request, 'Account created successfully!')
+            
             return redirect('my-login')
 
     context = {'form': form}
